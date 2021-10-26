@@ -1,0 +1,76 @@
+/* Display: inline [NÃO ACEITA WIDTH e HEIGHT */
+/* FLOAT usado no Display Block*/
+/* NÃO alterar o HTML para corrigir o CSS */
+
+/* 
+TODO:
+[] Segundo Menu
+[] Conteudo Principal
+[] Footer
+
+[] links
+
+*/
+
+body {
+    font-size: 1rem;
+}
+
+.header li{
+    float: left;
+}
+
+.header > li {
+    padding: 0 calc(0.075 * 100vw);
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.first-menu {
+    line-height: 2.5rem;
+    background-color: black;    
+}
+
+.first-menu * {
+    /* border: 1px dashed red; */
+}
+
+.first-menu > ul {
+    width: calc(85vw / 2);
+}
+
+.first-menu ul:nth-child(2) {
+    float: right;
+}
+
+.first-menu ul:nth-child(2) > li {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header .pt li {
+    /* background-color: black; */
+}
+
+.header .first-menu a:hover {
+    color: #FFF;
+}
+
+.header .first-menu a {
+    color: #CCC;
+    display: block;
+    padding: 0 1rem;
+}
+
+a .logo {
+    width: 140px;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+a .logo:hover {
+    opacity: .75;
+}
